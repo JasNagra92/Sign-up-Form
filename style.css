@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: my-norse-font;
+    src: url(./../../Downloads/Norse-Bold.otf);
+}
+h3{
+    font-family: my-norse-font,sans-serif;
+    align-self: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 2rem;
+}
+label,
+input{
+    font-size: .75rem;
+}
+header,
+footer{
+    height:100px;
+    background-color: black;
+}
+main{
+    align-items: center;
+}
+main,
+.leftBox,
+.rightBox,
+.logoBox{
+    display: flex;
+}
+.leftBox{
+    background-image: url(./images/Desktop.jpeg);
+    background-size: cover;
+    width:600px;
+    height:600px;
+    background-repeat: no-repeat;
+    flex-grow: .5;
+}
+.rightBox{
+    flex-grow: 1.2;
+    flex-direction: column;
+}
+img{
+    max-height:100%;
+    max-width:100%;
+}
+.logoBox{
+    height:100px;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: center;
+    background-color: rgba(3,0,0,.4);
+}
