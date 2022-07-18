@@ -140,8 +140,12 @@ input:not(:placeholder-shown) {
   opacity: 0.3;
   color: white;
 }
-input[type="email"]:focus:invalid {
+input[type="email"]:invalid {
   background-color: red;
   opacity: 0.3;
 }
-
+#password.invalid,
+#confirmpassword.invalid{
+  background-color: red;
+  opacity:.3
+}
