@@ -38,11 +38,11 @@ input {
   margin: 0 0 5px 0;
   font-size: 1.5rem;
 }
-label{
-    font-size: 1rem;
+label {
+  font-size: 1rem;
 }
-input:focus{
-    outline-color: blue;
+input:focus {
+  outline-color: blue;
 }
 header,
 footer {
@@ -136,12 +136,12 @@ button {
 .login {
   padding-left: 40px;
 }
-input:not(:placeholder-shown){
-    background-color: green;
-    opacity: .3;
-    color: white;
+input:not(:placeholder-shown) {
+  background-color: green;
+  opacity: 0.3;
+  color: white;
 }
-input[type="email"]:focus:invalid{
-    background-color: red;
-    opacity: .3
+input[type="email"]:focus:invalid {
+  background-color: red;
+  opacity: 0.3;
 }
