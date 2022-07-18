@@ -5,6 +5,11 @@
   font-family: my-norse-font;
   src: url(./../../Downloads/Norse-Bold.otf);
 }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 h3 {
   font-family: my-norse-font, sans-serif;
   align-self: center;
@@ -18,19 +23,29 @@ li {
 }
 label,
 input {
-  font-size: 0.75rem;
+  font-family: my-norse-font, sans-serif;
+  font-size: 1.2rem;
   box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 0;
+  border-radius: 3px;
+}
+input {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  width: 100%;
+  padding: 5px;
+  margin: 0 0 5px 0;
 }
 header,
 footer {
-  height: 100px;
+  flex: 1;
   background-color: black;
 }
 main {
   align-items: center;
+  flex: 2;
 }
 main,
 .leftBox,
@@ -41,22 +56,21 @@ main,
 .leftBox {
   background-image: url(./images/Desktop.jpeg);
   background-size: cover;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 800px;
   background-repeat: no-repeat;
-  flex-grow: 0.5;
 }
 .rightBox {
   flex-grow: 1.2;
   flex-direction: column;
-  height: 600px;
+  height: 800px;
   justify-content: center;
 }
 .infoText {
   background-color: rgb(245, 245, 245);
   width: 100%;
   box-sizing: border-box;
-  flex: 0.3 3 auto;
+  flex: 0.6;
 }
 .quote {
   margin-top: 75px;
@@ -78,20 +92,20 @@ img {
 .formfield {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
+  flex-direction: column;
 }
 h2 {
-  width: 100%;
   padding-left: 40px;
-  height: 10%;
   margin-bottom: 0;
 }
 form {
   width: 100%;
   display: flex;
-  flex: 3;
+  flex-direction: column;
+  flex: 2;
 }
 #create {
-  height: 45%;
   background-color: rgb(245, 245, 245);
   flex: 1;
 }
@@ -99,15 +113,19 @@ button {
   border-radius: 8px 8px 8px 8px;
   margin-top: 30px;
   margin-left: 40px;
-  padding: .5rem 3rem .5rem 3rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
   background-color: green;
   color: white;
   font-size: 1rem;
 }
+.fields {
+  display: flex;
+  height: 200px;
+}
 .leftinput,
 .rightinput {
-  width: 50%;
-  box-shadow: 0px 10px black;
+  width: fit-content;
+  box-shadow: 0px 2px black;
 }
 .login {
   padding-left: 40px;
