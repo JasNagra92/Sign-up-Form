@@ -39,11 +39,9 @@ input {
 input {
   background-color: #f6f7f8;
   border: 1px solid #d6d9dc;
-  width: 100%;
+  width: 20vw;
   padding: 5px;
-  margin: 0 0 5px 0;
-  /* font-size: 1.5rem; */
-}
+  margin: 0 0 5px 0;}
 label {
   font-size: 0.75rem;
 }
@@ -129,16 +127,18 @@ button {
 }
 .leftinput,
 .rightinput {
-  width: fit-content;
-  box-shadow: 0px 2px black;
+  box-shadow: 0 2px rgb(0,0,0,0.4);
+  margin-bottom: 2px;
+}
+.rightinput{
+  flex:1
 }
 .login {
   padding-left: 40px;
 }
 input:not(:placeholder-shown) {
-  background-color: green;
-  opacity: 0.3;
-  color: white;
+  background-color: lightgreen;
+  color: black;
 }
 input[type="email"]:invalid {
   background-color: red;
@@ -147,5 +147,8 @@ input[type="email"]:invalid {
 #password.invalid,
 #confirmpassword.invalid {
   background-color: red;
-  opacity: 0.3;
+  opacity: 0.8;
+}
+#message{
+  font-size: small;
 }

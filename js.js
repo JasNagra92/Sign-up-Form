@@ -9,8 +9,10 @@ function validatePw() {
   if (psw1 !== psw2) {
     psw1input.classList.add("invalid");
     psw2input.classList.add("invalid");
+    document.getElementById("message").innerHTML = "passwords do not match"
   } else if (psw1 == psw2) {
     psw1input.classList.remove("invalid");
     psw2input.classList.remove("invalid");
+    document.getElementById("message").innerHTML = ""
   }
 }
