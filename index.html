@@ -19,14 +19,17 @@
     </div>
 
     <div class="rightBox">
-      <div>This is not a real online service! You know you need something<br> like this in your life, sign up now for private jiu jitu<br> lessons, looking at you wayne.<br>
-
-        You <em>know</em> you want to.
+      <div class="infoText">
+        <p>
+          This is not a real online service! You know you need something<br> like this in your life, sign up now for private jiu jitu<br> lessons, looking at you wayne.<br><br>
+          You <em>know</em> you want to.
+        </p>
       </div>
-      <div class="formfield">
+      <form id="signup" action="">
+        <div class="formfield">
          <h2>Let's do this!</h2>
-         <form action="">
-          <div>
+         
+          <div class="leftinput">
             <ul>
               <li><label for="firstname">FIRST NAME</label></li>
               <li><input type="text" id="firstname" name="firstName"></li>
@@ -36,7 +39,7 @@
               <li><input type="passoword" id="password" name="password"></li>
             </ul>
           </div>
-          <div>
+          <div class="rightinput">
             <ul>
               <li><label for="lastname">LAST NAME</label></li>
               <li><input type="text" name="lastname" id="lastname"></li>
@@ -46,11 +49,15 @@
               <li><input type="text" name="confirmPassword" id="confirmpassword"></li>
             </ul>
           <div>
-        </form>
       </div>
-      <div></div>
+        </form>
+        
     </div>
+        <div id="create">
+            <button type="submit" form="signup">Create Account</button>
+        </div>      
   </main>
+  
   <footer></footer>
 </body>
 </html>

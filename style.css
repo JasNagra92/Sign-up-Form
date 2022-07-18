@@ -1,75 +1,110 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: my-norse-font;
-    src: url(./../../Downloads/Norse-Bold.otf);
+  font-family: my-norse-font;
+  src: url(./../../Downloads/Norse-Bold.otf);
 }
-h3{
-    font-family: my-norse-font,sans-serif;
-    align-self: center;
-    font-weight: bolder;
-    color: white;
-    font-size: 2rem;
+h3 {
+  font-family: my-norse-font, sans-serif;
+  align-self: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 2rem;
 }
 ul,
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 label,
-input{
-    font-size: .75rem;
-    box-sizing: border-box;
-    width: 150px;
-    margin: 0;
-    padding: 0;
+input {
+  font-size: 0.75rem;
+  box-sizing: border-box;
+  width: 150px;
+  margin: 0;
+  padding: 0;
 }
 header,
-footer{
-    height:100px;
-    background-color: black;
+footer {
+  height: 100px;
+  background-color: black;
 }
-main{
-    align-items: center;
+main {
+  align-items: center;
 }
 main,
 .leftBox,
 .rightBox,
-.logoBox{
-    display: flex;
+.logoBox {
+  display: flex;
 }
-.leftBox{
-    background-image: url(./images/Desktop.jpeg);
-    background-size: cover;
-    width:600px;
-    height:600px;
-    background-repeat: no-repeat;
-    flex-grow: .5;
+.leftBox {
+  background-image: url(./images/Desktop.jpeg);
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  flex-grow: 0.5;
 }
-.rightBox{
-    flex-grow: 1.2;
-    flex-direction: column;
+.rightBox {
+  flex-grow: 1.2;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
 }
-img{
-    max-height:100%;
-    max-width:100%;
+.infoText {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  box-sizing: border-box;
+  flex: .3 3 auto;
 }
-.logoBox{
-    height:100px;
-    width: 100%;
-    margin-top: 200px;
-    justify-content: center;
-    background-color: rgba(3,0,0,.4);
+p{
+    margin-top: 75px;
+    margin-left: 30px;
+    font-size: large;
 }
-.formfield{
-    display: flex;
-    flex-wrap: wrap;
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
-h2{
-    width: 100%;
+.logoBox {
+  height: 100px;
+  width: 100%;
+  margin-top: 200px;
+  justify-content: center;
+  background-color: rgba(3, 0, 0, 0.4);
 }
-form{
-    width:100%;
-    display: flex;
-
+.formfield {
+  display: flex;
+  flex-wrap: wrap;
+}
+h2 {
+  width: 100%;
+  padding-left: 40px;
+  height:10%
+}
+form {
+  width: 100%;
+  display: flex;
+  flex:3
+}
+#create {
+  height:40%;
+  background-color: rgb(245, 245, 245);
+  flex: 1
+}
+button {
+  border-radius: 3px 3px 3px 3px;
+  margin-top: 30px;
+  margin-left: 40px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.leftinput,
+.rightinput {
+  width: 50%;
+  box-shadow: 0px 10px black
+}
+.leftinput {
+  margin-right: ;
 }
