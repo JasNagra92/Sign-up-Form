@@ -12,9 +12,17 @@ h3{
     color: white;
     font-size: 2rem;
 }
+ul,
+li{
+    list-style: none;
+}
 label,
 input{
     font-size: .75rem;
+    box-sizing: border-box;
+    width: 150px;
+    margin: 0;
+    padding: 0;
 }
 header,
 footer{
@@ -52,4 +60,16 @@ img{
     margin-top: 200px;
     justify-content: center;
     background-color: rgba(3,0,0,.4);
+}
+.formfield{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    width: 100%;
+}
+form{
+    width:100%;
+    display: flex;
+
 }
